@@ -11,8 +11,8 @@ if(isNotEligableForDisability()) return 0;
 
 function isNotEligableForDisability() {
   return ((anEmployee.seniority < 2)
-          (anEmployee.monthsDisabled > 12)
-          (anEmployee.isPartTime))
+          || (anEmployee.monthsDisabled > 12)
+          || (anEmployee.isPartTime))
          );
 }
 
